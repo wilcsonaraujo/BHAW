@@ -1,6 +1,9 @@
 body {
     color: #566787;
-    background: #f5f5f5;
+    background-image: url("imagens/Untitled 3.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom; 
     font-family: 'Roboto', sans-serif;
 }
 .table-wrapper {
