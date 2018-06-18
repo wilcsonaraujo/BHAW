@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Elegant Table Design</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/produto.css" media="screen" />
+<script type="text/javascript">
+$(document).ready(function(){
+	$('[data-toggle="tooltip"]').tooltip();
+	// Animate select box length
+	var searchInput = $(".search-box input");
+	var inputGroup = $(".search-box .input-group");
+	var boxWidth = inputGroup.width();
+	searchInput.focus(function(){
+		inputGroup.animate({
+			width: "300"
+		});
+	}).blur(function(){
+		inputGroup.animate({
+			width: boxWidth
+		});
+	});
+});
+</script>
+</head>
+<body>
+    <div class="container">
+        <div class="table-wrapper">			
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-4">
+						<div class="show-entries">
+							<span>Mostre</span>
+							<select>
+								<option>5</option>
+								<option>10</option>
+								<option>15</option>
+								<option>20</option>
+							</select>
+							<span>produtos</span>
+						</div>						
+					</div>
+					<div class="col-sm-4">
+						<h2 class="text-center"><b>Produtos</b> à venda</h2>
+					</div>
+                    <div class="col-sm-4">
+                        <div class="search-box">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="material-icons">&#xE8B6;</i></span>
+								<input type="text" class="form-control" placeholder="Pesquisar&hellip;">
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-4">
+						<div class="show-entries"> 
+                            <!-- Esses icones é para uma pesquisa mais rapida, mas é so estético. -->
+                            <a href="#" class="mdi mdi-chrome-reader-mode" title="Livros"><i class="material-icons">&#xE86D;</i></a>
+                            <a href="#" class="mdi mdi-tablet-android" title="Tablet's"><i class="material-icons">&#xE330;</i></a>   
+                            <a href="#" class="mdi mdi-computer" title="Computador"><i class="material-icons">&#xE30A;</i></a>   
+                            <a href="#" class="mdi mdi-apps" title="Calculadora"><i class="material-icons">&#xE5C3;</i></a>
+                            <a href="#" class="mdi mdi-blur-off" title="Outros"><i class="material-icons">&#xE3A4;</i></a>                       
+						</div>						
+					</div>
+                </div>
+            </div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Nome <i class="fa fa-sort"></i></th>
+                        <th>Preço</th>
+                        <th>Descrição <i class="fa fa-sort"></i></th>
+                        <th>Ativo <i class="fa fa-sort"></i></th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Calculadora Científica</td>
+                        <td>54.00</td>
+                        <td>Calculadora Científica FX-82MS CASIO</td>
+                        <td>Disponível</td>
+                        <td>
+							<a href="#" class="mdi mdi-add-shopping-cart" title="Carrinho" data-toggle="tooltip"><i class="material-icons">&#xE854;</i></a>
+                            <a href="#" class="btn btn-info btn-sm" role="button" data-toggle="tooltip">Comprar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mecânica Dos Materiais</td>
+                        <td>50.00</td>
+                        <td>Livro de Mecânica Dos Materiais - 7ª Ed. 2015</td>
+                        <td>Disponível</td>
+                        <td>
+							<a href="#" class="mdi mdi-add-shopping-cart" title="Carrinho" data-toggle="tooltip"><i class="material-icons">&#xE854;</i></a>
+                            <a href="#" class="btn btn-info btn-sm" role="button" data-toggle="tooltip">Comprar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Livro Calculo II</td>
+                        <td>50.00</td>
+                        <td>Livro de calculo II James Stwart</td>
+                        <td>Disponível</td>
+                        <td>
+							<a href="#" class="mdi mdi-add-shopping-cart" title="Carrinho" data-toggle="tooltip"><i class="material-icons">&#xE854;</i></a>
+                            <a href="#" class="btn btn-info btn-sm" role="button" data-toggle="tooltip">Comprar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Livro Calculo I</td>
+                        <td>50.00</td>
+                        <td>Livro de calculo I James Stwart</td>
+                        <td>Indisponível</td>
+                        <td>
+							<a href="#" class="mdi mdi-add-shopping-cart" title="Carrinho" data-toggle="tooltip"><i class="material-icons">&#xE854;</i></a>
+                            <a href="#" class="btn btn-info btn-sm" role="button" data-toggle="tooltip">Comprar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Prancheta oficio</td>
+                        <td>15.00</td>
+                        <td>Prancheta oficio ACRIMET 930</td>
+                        <td>Disponível</td>
+                        <td>
+							<a href="#" class="mdi mdi-add-shopping-cart" title="Carrinho" data-toggle="tooltip"><i class="material-icons">&#xE854;</i></a>
+                            <a href="#" class="btn btn-info btn-sm" role="button" data-toggle="tooltip">Comprar</a>
+                        </td>
+                    </tr>        
+                </tbody>
+            </table>
+            <div class="clearfix">
+                <div class="hint-text">Mostrando <b>5</b> de <b>25</b> entradas</div>
+                <ul class="pagination">
+                    <li class="page-item disabled"><a href="#">Previous</a></li>
+                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#" class="page-link">4</a></li>
+                    <li class="page-item"><a href="#" class="page-link">5</a></li>
+                    <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>     
+</body>
+</html>     
