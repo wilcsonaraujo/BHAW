@@ -1,2 +1,0 @@
-INDEX VERSION 1.130+D:\Github\BHAW\projetoBhaw\.metadata\.plugins\org.eclipse.jdt.core
-466246892.index
