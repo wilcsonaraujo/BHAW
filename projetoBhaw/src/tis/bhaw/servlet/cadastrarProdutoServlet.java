@@ -40,7 +40,7 @@ public class cadastrarProdutoServlet extends HttpServlet{
 				
 				saida.println("<html>");
 				saida.println("<body>");
-				saida.println("Usuário " + u.getNome() + " cadastrado com sucesso!");
+				saida.println("Produto " + u.getNome() + " cadastrado com sucesso!");
 				saida.println("</body>");	        
 				saida.println("</html>");
 				

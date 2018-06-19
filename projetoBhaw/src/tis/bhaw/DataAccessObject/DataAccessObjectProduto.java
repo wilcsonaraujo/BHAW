@@ -100,6 +100,11 @@ public class DataAccessObjectProduto {
 			resulQuery.close();
 			stmtQuery.close();
 			
+			if(p!=null) {
+				p.setClick(p.getClick() + 1);
+				alterarProduto(p);
+			}
+			
 			return p;
 
 		

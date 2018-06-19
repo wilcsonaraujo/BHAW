@@ -2,10 +2,10 @@ package tis.bhaw.Classes;
 
 public class Produto {
 	
-	private String nome;
-	private float preco;
-	private int quantidade;
-	private String descricao;
+	private String nome = "";
+	private float preco = (float) 0.0;
+	private int quantidade = 0;
+	private String descricao ="";
 	private int id;
 	private String ativo;
 	private String status;
